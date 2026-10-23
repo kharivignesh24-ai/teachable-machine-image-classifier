@@ -9,8 +9,8 @@ Tool Used
 
 Model Information
 - **Project type:** Image classification
-- **Number of classes:** [Enter number of classes]
-- **Class names:** [Enter your class names]
+- **Number of classes:** 2
+- **Class names:** mobile and laptop
 - **Training method:** Supervised machine learning
 
 Files
