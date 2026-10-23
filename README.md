@@ -1,31 +1,51 @@
-Teachable Machine Image Classifier
+# Mobile vs Laptop Image Classifier
 
-Overview
-This project contains an image-classification model trained using Google Teachable Machine.
+## Project Overview
 
-Tool Used
+This project is an image-classification model trained using Google Teachable Machine. It classifies input images into two categories: mobile phones and laptops.
+
+## Objectives
+
+- Build an image classifier using supervised machine learning.
+- Train the model using labeled images.
+- Recognize whether an input image belongs to the mobile or laptop category.
+- Explore practical image-classification techniques.
+
+## Tools and Technologies
+
 - Google Teachable Machine
-- TensorFlow.js (if this is the exported model format)
+- TensorFlow.js model export format
 
-Model Information
-- **Project type:** Image classification
-- **Number of classes:** 2
-- **Class names:** mobile and laptop
-- **Training method:** Supervised machine learning
+## Dataset
 
-Files
+| Class | Training Images |
+|---|---:|
+| Mobile | 152 |
+| Laptop | 153 |
+| **Total** | **305** |
+
+## Model Files
+
 - `model.json` — model architecture
 - `metadata.json` — class labels and model metadata
-- Weight file(s) — learned model parameters
+- `weights.bin` — trained model weights
 
-How to Use
-This repository stores the exported trained model. To run predictions, use a compatible application or the Teachable Machine Image library.
+## Model Output
 
-Model Source
-Created with [Google Teachable Machine](https://teachablemachine.withgoogle.com/train/image).
+The model produces predictions for the `mobile` and `laptop` classes, along with confidence scores.
 
-Limitations
-Predictions depend on the training data and the images supplied to the model. Accuracy should be evaluated using separate test images.
+## How to Use
 
-Author
-Harivignesh K
+The repository contains the exported trained model. A compatible application is required to load the model and classify new images.
+
+## Limitations
+
+Model predictions depend on the training images, image quality, background, lighting, and camera angle. The displayed confidence score is not a guarantee of correctness.
+
+## Training Platform
+
+[Google Teachable Machine](https://teachablemachine.withgoogle.com/train/image)
+
+## Author
+
+Hari Vignesh
